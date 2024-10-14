@@ -1,27 +1,31 @@
 import Image from "next/image";
-
+import Intro from "@/components/Intro";
+import CommitStatus from "@/components/CommitStatus";
+import meLogo from "@/assets/images/meLogo.png";
+import MyStack from "@/components/MyStacks";
+import Contact from "@/components/Contact";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <header>
-        <div>{`Mer's Page`}</div>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <header className="w-[760px]">
+        <div className="inline-flex justify-center items-center gap-[9.094px]">
+          <Image aria-hidden src={meLogo} alt="File icon" width={32} />
+          <div className="text-black font-inter text-[20px] font-bold leading-normal">{`Mer's Page`}</div>
+        </div>
       </header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <img src="https://ghchart.rshah.org/000000/merx88" />
-        <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></img>
-        <img
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=merx88&show_icons=true&hide_border=true&title_color=000000&icon_color=000000&layout=compact"
-          alt="merx88's GitHub Stats"
-        />
-        <Image
-          aria-hidden
-          src="https://nextjs.org/icons/file.svg"
-          alt="File icon"
-          width={16}
-          height={16}
-        />
+        <Intro />
+
+        <div className="inline-flex items-center gap-[12px]">
+          <MyStack />
+          <Contact />
+        </div>
+
+        <CommitStatus />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+      <footer className="text-black font-inter text-[20px] font-bold leading-normal">
+        Made by me ❤️
+      </footer>
     </div>
   );
 }
