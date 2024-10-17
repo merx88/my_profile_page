@@ -66,13 +66,13 @@ export default function MyStack() {
         <div className="w-[280px]">
           <ECharts
             option={options}
-            opts={{ renderer: "svg", width: "280", height: "200" }}
+            opts={{ renderer: "svg", width: 280, height: 200 }}
           />
         </div>
         <div className="w-[280px]">
           <ECharts
             option={options}
-            opts={{ renderer: "svg", width: "280", height: "200" }}
+            opts={{ renderer: "svg", width: 280, height: 200 }}
           />
         </div>
       </div>
