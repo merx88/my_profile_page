@@ -101,13 +101,10 @@ export default function Intro() {
           </div>
 
           <span className="text-black font-inter text-[20px] font-bold leading-normal">
-            {`Programmers with back-to-basics, evidence-based problem-solving skills`}
+            {`🫶 Thank you for visiting my portfolio`}
           </span>
           <span className="text-[#474747] font-inter text-[12px] font-medium leading-normal">
-            {`I don't know what I'm going to write, but I'll write it down first,
-          and maybe next time I get a chance. It's too hard, it's annoying, I
-          can't say no, it's a jana assignment, but what the heck, you're
-          introducing yourself twice today.`}
+            {`I'm a front-end developer. I'm very much a back-to-basics person and value rationale and intent when writing code. As a web developer, I also prioritise the user experience`}
           </span>
         </div>
       </div>
