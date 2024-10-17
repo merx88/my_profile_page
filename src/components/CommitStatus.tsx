@@ -1,4 +1,3 @@
-import commit from "../assets/images/commit.png";
 import Image from "next/image";
 
 export default function CommitStatus() {
@@ -8,8 +7,12 @@ export default function CommitStatus() {
         <span className="text-black font-inter text-[20px] font-bold leading-normal">
           ✅ Commit Status
         </span>
-        <Image src={commit} alt="page image" width={700} />
-        {/* <img src="https://ghchart.rshah.org/0BCC01/merx88" /> */}
+        <Image
+          src="https://ghchart.rshah.org/0BCC01/merx88"
+          alt="GitHub Contribution Chart"
+          width={700}
+          height={200}
+        />
       </div>
     </div>
   );
