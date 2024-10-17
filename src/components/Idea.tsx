@@ -1,6 +1,5 @@
 import layer2 from "../assets/images/layer2.png";
 import image from "../assets/images/image.png";
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Idea() {
